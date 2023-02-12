@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        // program that fills an array with numbers that add up to zero
+    private String sumElementInArray() {
 
         System.out.println("Please give amount of array: ");
         Scanner sc = new Scanner(System.in);
@@ -28,30 +27,9 @@ public class Main {
                     int value = tab[i];
                     value++;
                     tab[i] = value;
-//                    int randomValue2 = random.nextInt(20);
-//                    tab[j] = randomValue2;
                 }
             }
         }
-
-//            for (int i = 0; i < tab.length - 1; i++){
-//                for (int j = i + 1; j < tab.length - 1; j++){
-//                    if (tab[j] == tab[i]){
-//                        int randomValue2 = random.nextInt(20);
-//                        tab[j] = randomValue2;
-//                    }
-//                }
-//            }
-
-
-//        for (int l = 0; l < tab.length - 1; l++) {
-//            for (int k = 0; k < tab.length - 1; k++) {
-//                if (tab[k] == tab[l]) {
-//                    int randomValue2 = random.nextInt(20);
-//                    tab[k] = randomValue2;
-//                }
-//            }
-//        }
 
         for (int j = 0; j < tab.length; j++) {
             sumArrayElement += tab[j];
@@ -60,7 +38,16 @@ public class Main {
         int lastArrayElement = -sumArrayElement;
         tab[lastArrayPosition] = lastArrayElement;
 
-        System.out.println(Arrays.toString(tab));
+        return Arrays.toString(tab);
+    }
+
+    public static void main(String[] args) {
+        // program that fills an array with numbers that add up to zero
+
+        Main main = new Main();
+        System.out.println(main.sumElementInArray());
     }
 }
+
+
 

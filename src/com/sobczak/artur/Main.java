@@ -45,7 +45,9 @@ public class Main {
         // program that fills an array with numbers that add up to zero
 
         Main main = new Main();
-        System.out.println(main.sumElementInArray());
+//      System.out.println(main.sumElementInArray());
+        String resultOfMethod = main.sumElementInArray();
+        System.out.println(resultOfMethod);
     }
 }
 

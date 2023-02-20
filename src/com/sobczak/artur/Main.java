@@ -48,6 +48,7 @@ public class Main {
 //      System.out.println(main.sumElementInArray());
         String resultOfMethod = main.sumElementInArray();
         System.out.println(resultOfMethod);
+
     }
 }
 
